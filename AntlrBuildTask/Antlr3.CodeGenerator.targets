@@ -111,7 +111,7 @@
   <PropertyGroup>
     <!-- Add grammar compilation to the CoreCompileDependsOn so that the IDE inproc compilers (particularly VB)
          can "see" the generated source files. -->
-    <CoreCompileDependsOn Condition="'$(BuildingInsideVisualStudio)' == 'true' ">
+    <CoreCompileDependsOn>
       DesignTimeGrammarCompilation;
       $(CoreCompileDependsOn)
     </CoreCompileDependsOn>
